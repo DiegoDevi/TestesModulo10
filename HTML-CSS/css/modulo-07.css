@@ -1,0 +1,160 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #333333;
+}
+
+p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #454545;
+}
+
+header p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+header {
+	font-weight: 900;
+	margin-top: auto;
+	background: rgb(203, 105, 225);
+	color: #ffffff;
+}
+
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #D7B1E9;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #D7B1E9;
+	background: #D7B1E9;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 600;
+	font-family: 'Limelight';
+	
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pattern.png') center top repeat #EEEEEE;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+p {
+	color: rgb(230, 121, 219);
+	color: #750389;
+}
+
+header,
+footer {
+	background-color: #700389;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(191, 37, 225, 0.5);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(197, 150, 200, 0.5);
+	color: #620169;
+}

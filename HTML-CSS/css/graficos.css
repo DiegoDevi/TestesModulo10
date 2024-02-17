@@ -1,0 +1,13 @@
+#grafico-01 {
+    background-color: aqua;
+    width: 600px;
+    height: 600px;
+    margin: 40px;
+    position: relative;
+    border-radius: 377px;
+    overflow: hidden;
+}
+ 
+#grafico-01 img {
+    width: 100;
+}
